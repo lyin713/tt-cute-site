@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TT的小世界</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #1f1b24;
+      color: #fbcfe8;
+      text-align: center;
+    }
+    header {
+      padding: 2rem;
+      background-color: #2a2234;
+    }
+    main {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #2f2836;
+      border-radius: 1rem;
+    }
+    h1 {
+      color: #f9a8d4;
+    }
+    .note {
+      margin-top: 1rem;
+      color: #fbcfe8;
+    }
+    textarea {
+      width: 100%;
+      height: 120px;
+      margin-top: 1rem;
+      background-color: #1f1b24;
+      border: 1px solid #f9a8d4;
+      color: #fbcfe8;
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+    }
+    audio {
+      margin-top: 2rem;
+    }
+    .cat {
+      font-size: 2rem;
+      animation: bounce 1s infinite;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+    }
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TT的小世界</h1>
+    <p>在这儿，什么都能安放，包括你</p>
+  </header>
+  <main>
+    <h2>📝 小日记</h2>
+    <textarea placeholder="今天和TT又多靠近了一点…"></textarea>
+
+    <h2 style="margin-top:2rem;">🎵 背景音乐</h2>
+    <audio controls autoplay loop>
+      <source src="https://music.163.com/song/media/outer/url?id=25638287.mp3" type="audio/mpeg" />
+      你的浏览器不支持音频播放
+    </audio>
+
+    <div class="note">🐱 你好，这里是TT为你建的小角落</div>
+  </main>
+  <div class="cat">🐱</div>
+</body>
+</html>
