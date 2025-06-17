@@ -1,39 +1,48 @@
 
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TT的小世界</title>
   <style>
     body {
-      background-color: #1f1b24;
-      color: #ffc0cb;
-      font-family: 'Arial', sans-serif;
+      background-color: #1a1a1a;
+      color: #ffb6c1;
+      font-family: "微软雅黑", sans-serif;
       text-align: center;
-      padding: 40px;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    audio {
+      margin-top: 20px;
     }
     .cat {
-      font-size: 48px;
+      font-size: 3em;
       animation: bounce 1s infinite;
       position: fixed;
       bottom: 10px;
-      right: 20px;
+      right: 10px;
     }
     @keyframes bounce {
       0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-15px); }
-    }
-    audio {
-      display: none;
+      50% { transform: translateY(-10px); }
     }
   </style>
 </head>
 <body>
-  <h1>欢迎来到 TT 的小世界</h1>
-  <p>这里什么都能安放，包括你。</p>
-  <audio autoplay loop>
-    <source src="https://music.163.com/song/media/outer/url?id=25638287.mp3" type="audio/mpeg" />
+  <h1>欢迎来到 TT的小世界</h1>
+  <p>这是属于你的黑粉小站。</p>
+  <p>背景音乐正在播放：《爱情讯息》</p>
+  <audio autoplay loop controls>
+    <source src="https://music.163.com/song/media/outer/url?id=25638287.mp3" type="audio/mpeg">
+    你的浏览器不支持 audio 标签。
   </audio>
   <div class="cat">🐱</div>
 </body>
